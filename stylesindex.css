@@ -1,0 +1,64 @@
+/* Structure */
+
+body {
+    background-color: #A3D6E2;
+    font-family:Andale Mono, monospace;
+    color: #C1DBE1;
+}
+
+footer {
+    background-color: #A3D6E2;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    color: #A3D6E2;
+    text-decoration: none;
+}
+
+#header {
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    margin: 30px;
+}
+
+.assignment {
+    margin: 10px;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 5px;  
+}
+
+/* Images */
+img {
+    max-width:100%;
+    background: black;
+    display:block;
+    margin: auto;
+    border: 3px solid gray;
+}
+
+
+
+/* Navigation */
+
+/* Typography */
+h1, h2, h3, p {
+    color: black;
+    text-align: center;
+}
+
+/* Larger Resolutions */
+@media only screen and (min-width: 900px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .assignment {
+        flex: 20%;
+    }
+}
