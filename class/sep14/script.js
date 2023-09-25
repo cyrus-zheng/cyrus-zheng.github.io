@@ -26,7 +26,20 @@ myName = "Sally" */
 //const myFunct = () => console.log("Hey you!");
 
 const moveSquare = () => {
-    document.getElementById("square").classList("move-square");
+    //document.getElementById("square").classList("move-square");
+
+    const square = document.getElementById("square");
+    const button = document.getElementById("button-move");
+
+    if (square.classList.contains("move-square"))
+        square.classList.remove("move-square");
+        button.innerHTML = "Start"
+        
+    else {
+        square.classList.add("move-squre");
+        button.innerHTML = "Stop"
+
+    }
 }
 
 const displayName = () => {
