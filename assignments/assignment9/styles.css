@@ -1,0 +1,72 @@
+/* Structure */
+
+body {
+    background-color: #A3D6E2;
+    font-family:Andale Mono, monospace;
+}
+
+#header {
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.spacer {
+    width: 20px;
+}
+
+
+/* Quote */
+.quote-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Rainbow */
+
+.rainbow-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    float: right;
+    background: white;
+    border-radius: 5px;
+}
+
+#rainbow {
+    display: flex;
+}
+
+.rainbow-strip {
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+    border: 1px solid #000;
+}
+
+#pot-of-gold {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Larger Resolutions */
+@media (min-width:900px){
+
+    .flex-container {
+        display: flex;
+    }
+
+}
