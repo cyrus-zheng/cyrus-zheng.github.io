@@ -1,0 +1,18 @@
+/* CSS using Flexbox */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background
+}

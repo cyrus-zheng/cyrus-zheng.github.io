@@ -13,16 +13,214 @@ h1 {
 /* Home Page */
 #home-page {
     justify-content: center;
+    align-items: center; 
+    max-width: 1000px;
+    padding: 20px;
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#home-page p,
-#home-page h1 {
+#about-content {
     top: 20%;
-    text-align: left;
+    text-align: center;
     background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#about-content2 {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#statistics {
+    flex: 1;
+    flex-basis: 23%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center; 
+}
+
+/* Player Profiles */
+
+#player-page {
+    justify-content: center;
+    align-items: center; 
+    max-width: 1000px;
+    padding: 20px;
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profile-about {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#profile-desc {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#profile-players {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 5px;  
+}
+
+/* Team Pages */
+#team-page {
+    justify-content: center;
+    align-items: center; 
+    max-width: 1000px;
+    padding: 20px;
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#team-desc {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#team-search {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
     border-radius: 5px;
 }
 
+#team-about {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5;
+}
+
+#team-attributes {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;        
+    background: white;
+    border-radius: 5px;  
+}
+
+/* Player Comparisons */
+#comparisons-page {
+    justify-content: center;
+    align-items: center; 
+    max-width: 1000px;
+    padding: 20px;
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#comparisons-about {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#comparison-column1 {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;        
+    background: white;
+    border-radius: 5px;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#comparison-column2 {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 5px;  
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+ul {
+    list-style-type: none;
+  }
+
+/* Personal Profile */
+#personal-page {
+    justify-content: center;
+    align-items: center; 
+    max-width: 1000px;
+    padding: 20px;
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#personal-about {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#personal-userinput {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;        
+    background: white;
+    border-radius: 5px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#personal-inputstats {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;        
+    background: white;
+    border-radius: 5px;  
+}
 
 /* Navigation */
 #main-nav {
@@ -35,7 +233,7 @@ h1 {
 }
 
 #main-nav li {
-    background-color: #002DC8;
+    background-color: #43699B;
     padding: 10px;
     margin: 2px 0;
 }
