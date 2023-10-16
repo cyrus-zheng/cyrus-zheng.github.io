@@ -1,18 +1,33 @@
-/* CSS using Flexbox */
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.container {
-    display: flex;
+#comparisons-page {
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: center; 
+    max-width: 1000px;
+    padding: 20px;
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.box {
-    width: 300px;
-    height: 200px;
-    background
+#comparisons-about {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
 }
+
+#comparison-column {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;        
+    background: white;
+    border-radius: 5px;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+  }

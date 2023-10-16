@@ -1,0 +1,64 @@
+/* Structure */
+body {
+    background-color: #A3D6E2;
+    font-family:Andale Mono, monospace;
+}
+
+#header {
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+img {
+    opacity: 100%;
+    width: 300px;
+    height: 300px;
+}
+
+#main {
+    justify-content: center;
+}
+
+.positioning {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 30%;
+    margin-bottom: 20%;
+    
+}
+
+.toy-box {
+    margin: 10px;
+    background-color: white;
+    border: 4px solid gray;
+    position: relative
+}
+
+.hidden {
+    display: none;
+}
+
+.changeOpacity {
+    opacity: 30%;
+}
+
+/* Larger Resolutions */
+@media (min-width:900px){
+    
+    .flex-container {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+}
