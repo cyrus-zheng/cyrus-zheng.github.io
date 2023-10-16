@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+
+        <title>Player Profiles</title>
+    </head>
+
+    <body>
+        <header>
+            <nav id="main-nav">
+                <div id="menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="menu-items" class="hidden">
+                    <li><a href="index.html"><img id="nav-logo" src="images/home.png" width="20px" height="20px"></a></li>
+                    <li id="nav-player"><a href="player.html">Player Profiles</a></li>
+                    <li id="nav-team"><a href="team.html">Team Pages</a></li>
+                    <li id="nav-comparisons"><a href="comparisons.html">Player Comparisons</a></li>
+                    <li id="nav-personal"><a href="personal.html">Personal Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="player-page" class="flex-container">
+            <section id="profile-about">
+                <h1>Player Profiles</h1>
+                <p>Be able to look through player's profiles and see how they compare to other stars in their position.</p>
+            </section>
+        </section>
+        
+        <section id="player-page" class="flex-container">
+            <section id="profile-desc">
+                <h1>Top Players Ranked Around The World</h1>
+                <p>This page will have individual pages featuring top professional playersincluding their personal information, personal stats, and performance history. There will be stats like appearances, goals, assists, and passes. Click on a position to look more into each player.</p>
+            </section>
+        </section>
+        
+        <section id="player-page" class="flex-container">
+            <section id="profile-players">
+                <h1>Attackers</h1>
+                <img src="images/attacker.png" width="150px" height="150px">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search for Attackers..." name="q">
+                    <button type="submit">Search</button>
+            </section>
+
+            <section id="profile-players">
+                <h1>Midfielders</h1>
+                <img src="images/midfielder.png" width="150px" height="150px">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search for Midfielders..." name="q">
+                    <button type="submit">Search</button>
+            </section>
+
+            <section id="profile-players">
+                <h1>Defenders</h1>
+                <img src="images/defender.webp" width="150px" height="150px">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search for Defenders..." name="q">
+                    <button type="submit">Search</button>
+            </section>
+
+            <section id="profile-players">
+                <h1>Goalkeepers</h1>
+                <img src="images/goalkeeper.png" width="150px" height="150px">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search for Goalkeepers..." name="q">
+                    <button type="submit">Search</button>
+            </section>
+        </section>
+    </body>
