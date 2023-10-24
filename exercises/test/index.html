@@ -1,22 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Photo Slideshow</title>
-</head>
-<body>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="image1.jpg" alt="Slide 1">
-        </div>
-        <div class="mySlides fade">
-            <img src="image2.jpg" alt="Slide 2">
-        </div>
-        <!-- Add more slides as needed -->
-    </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Personal Profile</title>
+    </head>
+
+    <body>
+        <header>
+            <nav id="main-nav">
+                <div id="menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="menu-items" class="hidden">
+                    <li><a href="index.html"><img id="nav-logo" src="images/home.png" width="20px" height="20px"></a></li>
+                    <li id="nav-player"><a href="player.html">Player Profiles</a></li>
+                    <li id="nav-team"><a href="team.html">Team Pages</a></li>
+                    <li id="nav-comparisons"><a href="comparisons.html">Player Comparisons</a></li>
+                    <li id="nav-personal"><a href="personal.html">Personal Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+
+         <section id="personal-page" class="flex-container">
+                <section id="personal-about">
+                    <h1>Personal Profile</h1>
+                    <p>Want to be able to track your progress and compare yourself to the pros? Do so right below with your very own create your own personal profile. Input your own stats in each category. In order to utilize this feature to the fullest, make sure to have analyzed your own match before inputting stats.</p>
+                </section>
+        </section>
+
+
+        <section id="personal-input" class="flex-container">
+            <section id="personal-userinput">
+                <h1>Profile Picture</h1>
+                <img src="images/import.png" width="50px" height="50px">
+                <h3>Name:</h3>
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Type Your Name" name="q">
+                    <button type="submit">Submit</button>
+                <h3>Height(Ft):</h3>
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Type Your Height" name="q">
+                    <button type="submit">Submit</button>
+                <h3>Weight(LBS):</h3>
+                <form action="/search" method="get">
+                   <input type="text" placeholder="Type Your Weight" name="q">
+                   <button type="submit">Submit</button>
+                <h3>Perferred Position:</h3>
+                <form action="/search" method="get">
+                   <input type="text" placeholder="Type Your Preferred Position" name="q">
+                  <button type="submit">Submit</button>
+            </section>
+            
+        <section id="personal-inputstats" class="flex-container">
+            <section id="personal-inputstats" class="flex-container">
+                <section id="personal-statsinput">
+                    <h2>Passing</h2>
+                    <img src="images/passing.png" width="150px" height="150px">
+                    <p>Passes Attempted:</p>
+                    <input type="text" placeholder="Passes Attempted" id="passesAttemptedInput">
+                    <p>Passes Completed:</p>
+                    <input type="text" placeholder="Passes Completed" id="passesCompletedInput">
+                    <button type="button" onclick="calculatePassingAccuracy()">Calculate</button>
+                    <p id="passingAccuracyResult"></p>
+                </section>
+            </section>
+            
+            <section id="personal-statsinput">
+                <h2>Dribbling</h2>
+                <img src="images/dribbling.png" width="150px" height="150px">
+                <p>Dribbles Attempted:</p>
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Dribbles Attempted" name="q">
+                    <button type="submit">Submit</button>
+                <p>Dribbles Completed:</p>
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Dribbles Completed" name="q">
+                    <button type="submit">Submit</button>
+            </section>
+
+            <section id="personal-statsinput">
+                <h2>Finishing</h2>
+                <img src="images/finishing.png" width="150px" height="150px">
+                <p>Shots Attempted:</p>
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Shots Attempted" name="q">
+                    <button type="submit">Submit</button>
+                <p>Shots on Target:</p>
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Shots on Target" name="q">
+                    <button type="submit">Submit</button>
+            </section>
+
+            <section id="personal-statsinput">
+                <h2>Defense</h2>
+                <img src="images/defending.png" width="150px" height="150px">
+                <p>Tackles:</p>
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Tackles" name="q">
+                    <button type="submit">Submit</button>
+                <p>Tackles Won:</p>
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Tackles Won" name="q">
+                    <button type="submit">Submit</button>
+            </section>
+
+            <section id="personal-statsinput">
+                <h2>Possession</h2>
+                <img src="images/possession.png" width="150px" height="150px">
+                <p>Minutes on the Ball:</p>
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Minutes on the Ball:" name="q">
+                    <button type="submit">Submit</button>
+            </section>
+
+            <section id="personal-statsinput">
+                <h2>Mental</h2>
+                <img src="images/mental.png" width="150px" height="150px">
+                <p>How Do You Feel After The Match?:</p>
+                <form action="/search" method="get">
+                    <input type="text" placeholder="How Do You Feel After The Match?" name="q">
+                    <button type="submit">Submit</button>
+            </section>
+        </section>
+            
+                
+        </section>
+        <script src="script.js"></script>
+    </body>

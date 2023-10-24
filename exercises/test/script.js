@@ -1,14 +1,17 @@
-let slideIndex = 0;
-showSlides();
+function calculatePassingAccuracy() {
+    // Get input values
+    var passesAttempted = parseInt(document.getElementById("passesAttemptedInput").value);
+    var passesCompleted = parseInt(document.getElementById("passesCompletedInput").value);
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+    // Check if the input values are valid numbers
+    if (isNaN(passesAttempted) || isNaN(passesCompleted)) {
+        document.getElementById("passingAccuracyResult").textContent = "Invalid input. Please enter valid numbers.";
+        return;
+    }
+
+    // Calculate passing accuracy
+    var accuracy = (passesCompleted / passesAttempted) * 100;
+
+    // Display the result
+    document.getElementById("passingAccuracyResult").textContent = "Passing Accuracy: " + accuracy.toFixed(2) + "%";
 }

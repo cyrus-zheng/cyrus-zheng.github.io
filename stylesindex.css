@@ -43,7 +43,7 @@ a {
     margin: 10px;
     padding: 40px 20px;
     background: white;
-    border-radius: 5px;  
+    border-radius: 5px; 
 }
 
 /* Images */
@@ -73,6 +73,10 @@ h1, h2, h3, p {
     }
 
     .assignment {
+        flex: 20%;
+    }
+
+    .project {
         flex: 20%;
     }
 }

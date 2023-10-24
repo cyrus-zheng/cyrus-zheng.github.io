@@ -280,6 +280,15 @@ ul {
     border-radius: 5px;  
 }
 
+.file-upload {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Add some margin between the input and the button */
+.file-upload input {
+    margin-right: 10px;
+}
 /* Navigation */
 #main-nav {
     margin-top: -20px;
