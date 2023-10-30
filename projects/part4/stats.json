@@ -37,7 +37,8 @@
         "shotsOnTarget": 65,
         "tacklesAttempted": 48,
         "tacklesWon": 38,
-        "minutesOnBall": 880
+        "minutesOnBall": 880,
+        "img": "images/neymar.jpg"
       },
       {
         "name": "Kevin De Bruyne",
@@ -101,7 +102,8 @@
         "shotsOnTarget": 65,
         "tacklesAttempted": 50,
         "tacklesWon": 40,
-        "minutesOnBall": 890
+        "minutesOnBall": 890,
+        "img": "images/mane.png"
       },
       {
         "name": "Virgil van Dijk",
