@@ -10,7 +10,9 @@
         "shotsOnTarget": 70,
         "tacklesAttempted": 50,
         "tacklesWon": 40,
-        "minutesOnBall": 900
+        "minutesOnBall": 900,
+        "img": "images/messi.png"
+        
       },
       {
         "name": "Cristiano Ronaldo",
@@ -22,7 +24,8 @@
         "shotsOnTarget": 75,
         "tacklesAttempted": 45,
         "tacklesWon": 35,
-        "minutesOnBall": 920
+        "minutesOnBall": 920,
+        "img": "images/ronaldo.png"
       },
       {
         "name": "Neymar Jr.",
@@ -46,7 +49,8 @@
         "shotsOnTarget": 55,
         "tacklesAttempted": 55,
         "tacklesWon": 45,
-        "minutesOnBall": 950
+        "minutesOnBall": 950,
+        "img": "images/kdb.png"
       },
       {
         "name": "Mohamed Salah",
@@ -58,7 +62,8 @@
         "shotsOnTarget": 60,
         "tacklesAttempted": 52,
         "tacklesWon": 42,
-        "minutesOnBall": 870
+        "minutesOnBall": 870,
+        "img": "images/salah.png"
       },
       {
         "name": "Robert Lewandowski",
@@ -70,7 +75,8 @@
         "shotsOnTarget": 80,
         "tacklesAttempted": 40,
         "tacklesWon": 30,
-        "minutesOnBall": 910
+        "minutesOnBall": 910,
+        "img": "images/lewandowski.png"
       },
       {
         "name": "Luka Modric",
@@ -82,7 +88,8 @@
         "shotsOnTarget": 45,
         "tacklesAttempted": 60,
         "tacklesWon": 50,
-        "minutesOnBall": 940
+        "minutesOnBall": 940,
+        "img": "images/modric.png"
       },
       {
         "name": "Sadio Mane",
@@ -106,7 +113,8 @@
         "shotsOnTarget": 40,
         "tacklesAttempted": 70,
         "tacklesWon": 55,
-        "minutesOnBall": 930
+        "minutesOnBall": 930,
+        "img": "images/dijk.png"
       },
       {
         "name": "Harry Kane",
@@ -118,7 +126,8 @@
         "shotsOnTarget": 70,
         "tacklesAttempted": 45,
         "tacklesWon": 35,
-        "minutesOnBall": 910
+        "minutesOnBall": 910,
+        "img": "images/kane.png"
       }
     ]
   }
