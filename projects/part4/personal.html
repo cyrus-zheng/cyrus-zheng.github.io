@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="input.js"></script>
+
+        <title>Personal Profile</title>
+    </head>
+
+    <body>
+        <header>
+            <nav id="main-nav">
+                <div id="menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="menu-items" class="hidden">
+                    <li><a href="index.html"><img id="nav-logo" src="images/home.png" width="20px" height="20px"></a></li>
+                    <li id="nav-player"><a href="player.html">Player Profiles</a></li>
+                    <li id="nav-team"><a href="team.html">Team Pages</a></li>
+                    <li id="nav-comparisons"><a href="comparisons.html">Player Comparisons</a></li>
+                    <li id="nav-personal"><a href="personal.html">Personal Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+
+         <section id="personal-page" class="flex-container">
+                <section id="personal-about">
+                    <h1>Personal Profile</h1>
+                    <p>Want to be able to track your progress and compare yourself to the pros? Do so right below with your very own create your own personal profile. Input your own stats in each category. In order to utilize this feature to the fullest, make sure to have analyzed your own match before inputting stats.</p>
+                </section>
+        </section>
+
+
+        <section id="personal-input" class="flex-container">
+            <section id="personal-userinput">
+                <section id="user-input">
+                    <h1>Profile Picture</h1>
+                    <div class="file-upload">
+                        <input type="file" id="profilePictureInput">
+                        <button type="button" onclick="displayPicture()">Upload</button>
+                    </div>
+                    <img id="profilePicture" src="images/question.png" alt="Profile Picture" width="200px" height="200px">
+                </section>
+
+                <div class="input-section">
+                    <h3>Name:</h3>
+                    <input type="text" placeholder="Type Your Name" id="nameInput">
+                    <button type="button" onclick="submitForm('name')">Submit</button>
+                    <div id="nameOutput"></div>
+                </div>
+            
+                <div class="input-section">
+                    <h3>Height(Ft):</h3>
+                    <input type="text" placeholder="Type Your Height" id="heightInput">
+                    <button type="button" onclick="submitForm('height')">Submit</button>
+                    <div id="heightOutput"></div>
+                </div>
+            
+                <div class="input-section">
+                    <h3>Weight(LBS):</h3>
+                    <input type="text" placeholder="Type Your Weight" id="weightInput">
+                    <button type="button" onclick="submitForm('weight')">Submit</button>
+                    <div id="weightOutput"></div>
+                </div>
+            
+                <div class="input-section">
+                    <h3>Preferred Position:</h3>
+                    <input type="text" placeholder="Type Your Preferred Position" id="positionInput">
+                    <button type="button" onclick="submitForm('position')">Submit</button>
+                    <div id="positionOutput"></div>
+                </div>
+            </section>
+            
+        <section id="personal-inputstats" class="flex-container">
+                <section id="personal-statsinput">
+                    <h2>Passing</h2>
+                    <img src="images/passing.png" width="150px" height="150px">
+                    <p>Passes Attempted:</p>
+                    <input type="text" placeholder="Passes Attempted" id="passesAttemptedInput">
+                    <p>Passes Completed:</p>
+                    <input type="text" placeholder="Passes Completed" id="passesCompletedInput">
+                    <button type="button" onclick="calculatePassingAccuracy()">Calculate</button>
+                    <p id="passingAccuracyResult"></p>
+                </section>
+            
+            
+                <section id="personal-statsinput">
+                    <h2>Dribbling</h2>
+                    <img src="images/dribbling.png" width="150px" height="150px">
+                    <p>Dribbles Attempted:</p>
+                    <input type="text" placeholder="Dribbles Attempted" id="dribblesAttemptedInput">
+                    <p>Dribbles Completed:</p>
+                    <input type="text" placeholder="Dribbles Completed" id="dribblesCompletedInput">
+                    <button type="button" onclick="calculateDribblingAccuracy()">Calculate</button>
+                    <p id="dribblingAccuracyResult"></p>
+                </section>
+
+                <section id="personal-statsinput">
+                    <h2>Finishing</h2>
+                    <img src="images/finishing.png" width="150px" height="150px">
+                    <p>Shots Attempted:</p>
+                    <input type="text" placeholder="Shots Attempted" id="shotsAttemptedInput">
+                    <p>Shots on Target:</p>
+                    <input type="text" placeholder="Shots on Target" id="shotsOnTargetInput">
+                    <button type="button" onclick="calculateFinishingAccuracy()">Calculate</button>
+                    <p id="finishingAccuracyResult"></p>
+                </section>
+
+                <section id="personal-statsinput">
+                    <h2>Defense</h2>
+                    <img src="images/defending.png" width="150px" height="150px">
+                    <p>Tackles Attempted:</p>
+                    <input type="text" placeholder="Tackles Attempted" id="tacklesAttemptedInput">
+                    <p>Tackles Won:</p>
+                    <input type="text" placeholder="Tackles Won" id="tacklesWonInput">
+                    <button type="button" onclick="calculateDefendingAccuracy()">Calculate</button>
+                    <p id="defendingAccuracyResult"></p>
+                </section>
+
+                <section id="personal-statsinput">
+                    <h2>Possession</h2>
+                    <img src="images/possession.png" width="150px" height="150px">
+                    <p>Minutes on the Ball:</p>
+                    <input type="text" placeholder="Minutes on the Ball" id="minutesOnBallInput">
+                    <button type="button" onclick="calculatePossessionPercentage()">Calculate</button>
+                    <p id="possessionPercentageResult"></p>
+                </section>
+
+                <section id="personal-statsinput">
+                    <h2>Mental</h2>
+                    <img src="images/mental.png" width="150px" height="150px">
+                    <p>How Do You Feel After The Match?</p>
+                    <label for="feeling"></label>
+                    <textarea id="feeling" name="feeling" required></textarea>
+                    <button type="button" onclick="submitFeelings()">Submit</button>
+                    <p id="feelingResult"></p>
+                </section>
+        </section>
+            
+                
+        </section>
+    </body>
