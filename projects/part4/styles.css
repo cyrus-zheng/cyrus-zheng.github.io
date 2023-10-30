@@ -240,6 +240,51 @@ ul {
     list-style-type: none;
   }
 
+.footballers-container {
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px;
+    margin: 30px;
+    text-align: center;
+    color: black;
+}
+
+  .footballer-card {
+    width: 1000px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footballer-img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.footballer-img:hover {
+    transform: scale(1.2);
+}
+
+.footballer-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding-right: 15px;
+}
+
+.footballer-details {
+    flex: 1;
+}
+
 
 /* Personal Profile */
 #personal-page {
@@ -285,7 +330,6 @@ ul {
     align-items: center;
 }
 
-/* Optional: Add some margin between the input and the button */
 .file-upload input {
     margin-right: 10px;
 }

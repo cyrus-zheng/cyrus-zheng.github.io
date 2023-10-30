@@ -1,25 +1,37 @@
-// Get the div where the footballers' data will be displayed
-var footballersList = document.getElementById("footballers-list");
+document.addEventListener("DOMContentLoaded", () => {
+  const footballersContainer = document.getElementById("footballers-container");
 
-// Fetch the JSON data from stats.json file
-fetch('stats.json')
-  .then(response => response.json())
-  .then(data => {
-    data.top10Footballers.forEach(function (footballer) {
-      var div = document.createElement("div");
-      div.innerHTML = "<h2>" + footballer.name + "</h2>" +
-        "<p>Passes Attempted: " + footballer.passesAttempted + "</p>" +
-        "<p>Passes Completed: " + footballer.passesCompleted + "</p>" +
-        "<p>Dribbles Attempted: " + footballer.dribblesAttempted + "</p>" +
-        "<p>Dribbles Completed: " + footballer.dribblesCompleted + "</p>" +
-        "<p>Shots Attempted: " + footballer.shotsAttempted + "</p>" +
-        "<p>Shots on Target: " + footballer.shotsOnTarget + "</p>" +
-        "<p>Tackles Attempted: " + footballer.tacklesAttempted + "</p>" +
-        "<p>Tackles Won: " + footballer.tacklesWon + "</p>" +
-        "<p>Minutes on Ball: " + footballer.minutesOnBall + "</p>";
-      footballersList.appendChild(div);
-    });
-  })
-  .catch(error => {
-    console.error('Error fetching JSON data:', error);
-  });
+  async function fetchData() {
+      try {
+          const response = await fetch("https://cyrus-zheng.github.io/projects/part4/stats.json");
+          const data = await response.json();
+
+          data.top10Footballers.forEach((footballer) => {
+              const footballerCard = document.createElement("div");
+              footballerCard.classList.add("footballer-card");
+
+              const nameElement = document.createElement("h2");
+              nameElement.textContent = footballer.name;
+
+              const statsList = document.createElement("ul");
+              statsList.innerHTML = `<li><strong>Passes Attempted:</strong> ${footballer.passesAttempted}</li>
+                                    <li><strong>Passes Completed:</strong> ${footballer.passesCompleted}</li>
+                                    <li><strong>Dribbles Attempted:</strong> ${footballer.dribblesAttempted}</li>
+                                    <li><strong>Dribbles Completed:</strong> ${footballer.dribblesCompleted}</li>
+                                    <li><strong>Shots Attempted:</strong> ${footballer.shotsAttempted}</li>
+                                    <li><strong>Shots on Target:</strong> ${footballer.shotsOnTarget}</li>
+                                    <li><strong>Tackles Attempted:</strong> ${footballer.tacklesAttempted}</li>
+                                    <li><strong>Tackles Won:</strong> ${footballer.tacklesWon}</li>
+                                    <li><strong>Minutes on Ball:</strong> ${footballer.minutesOnBall}</li>`;
+
+              footballerCard.appendChild(nameElement);
+              footballerCard.appendChild(statsList);
+              footballersContainer.appendChild(footballerCard);
+          });
+      } catch (error) {
+          console.error("Error fetching data: ", error);
+      }
+  }
+
+  fetchData();
+});
