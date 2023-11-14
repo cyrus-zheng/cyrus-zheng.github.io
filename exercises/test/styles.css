@@ -1,56 +1,148 @@
 /* Structure */
 body {
-    background-color: #A3D6E2;
-    font-family: Andale Mono, monospace;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #7450BF;
 }
 
 h1 {
-    width: 250px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #fff;
-    padding: 5px;
-    margin: 30px;
     text-align: center;
-    color: black;
+    border: 3px solid #4C2896;
+    background: #DAC8FF;
+    padding: 10px;
 }
 
-/* Footballer */
-.footballer-card {
-    width: 1000px;
-    margin: 20px 0;
-    padding: 15px;
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
+#car-details {
+    padding: 10px;
+    margin: 10px;
+    background: #DAC8FF;
+    border: 3px solid #4C2896;
+}
+
+#add-link {
+    font-size: 2em;
+    background-color: #DAC8FF;
+    border: 3px solid #4C2896;
+}
+
+#data-status {
+    background-color: #DAC8FF;
+    border: 3px solid #4C2896;
+    width: 40%;
     align-items: center;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
 }
 
-.footballer-img {
-    width: 150px;
-    height: auto;
-    margin-right: 20px;
-    border: 2px solid #001ca7;
-    border-radius: 10px;
+#edit-link {
+    float: right;
+    margin-right: 10px;
 }
 
-.footballer-img:hover {
-    transform: scale(1.2);
+#delete-link {
+    float: right;
 }
 
-.footballer-title {
+#car-form {
+    padding: 10px;
+    margin: 10px;
+}
+
+#main-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+#add-car {
+    border: 3px solid #4C2896;
+    background: #DAC8FF;
+    padding: 30px;
+}
+
+#car-list {
+    width: 100%; /* Optionally set a maximum width */
+}
+
+.car {
+    padding: 10px;
+    margin: 10px;
+    background: #DAC8FF;
+    border: 3px solid #4C2896;
+}
+
+.pad-this {
+    padding: 20px;
+}
+
+/* Form */
+label {
+    display: block;
+}
+
+#features-p input {
+    margin-top: 5px;
+}
+
+#add-feature {
+    color: #4C2896;
+    font-size: 0.75em;
+    text-align: right;
+}
+
+.inline {
+    display: inline;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
     font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    padding-right: 15px;
+    padding: 0px 5px;
 }
 
-.footballer-details {
-    flex: 1;
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Typography */
+a {
+    text-decoration: none;
+    color:black;
+}
+
+#main-nav-items {
+    font-size: 1.2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+/* Larger Resolutions */
+@media (min-width: 600px) {
+    #add-car {
+        max-width: 30%;
+        margin: auto;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    .car {
+        width: 25%;
+    }
 }
