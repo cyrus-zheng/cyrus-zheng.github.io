@@ -1,0 +1,407 @@
+/* Structure */
+
+body {
+    background-color: #A3D6E2;
+    font-family:Andale Mono, monospace;
+}
+
+h1 {
+
+    font-size: xx-large;
+    text-align: center;
+}
+
+/* Home Page */
+#home-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    max-width: 1000px;
+    padding: 20px;
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-content {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#statistics {
+    border: 1px solid black;
+    width: 45%; 
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    height: 550px;
+    width: 300px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input, textarea {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#success-message,
+#error-message {
+    text-align: center;
+}
+
+#error-message {
+    color: red;
+}
+
+.video-section,
+.form-section {
+    width: 45%;
+}
+
+.embed-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 55%; 
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.form-section h2 {
+    text-align: center;
+}
+
+
+
+/* Player Profiles */
+
+#player-page {
+    justify-content: center;
+    align-items: center; 
+    max-width: 1000px;
+    padding: 20px;
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profile-about {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#profile-desc {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#profile-players {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 5px;  
+}
+
+/* Team Pages */
+#team-page {
+    justify-content: center;
+    align-items: center; 
+    max-width: 1000px;
+    padding: 20px;
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#team-desc {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#team-search {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+#team-about {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5;
+}
+
+#team-attributes {
+    text-align: center;
+    border: 1px solid black;
+    width: 45%; 
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    height: 550px;
+    width: 300px; 
+    border-radius: 5px;
+}
+
+/* Player Comparisons */
+#comparisons-page {
+    justify-content: center;
+    align-items: center; 
+    max-width: 1000px;
+    padding: 20px;
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#comparisons-about {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#comparison-column {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;        
+    background: white;
+    border-radius: 5px;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+#footballers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.comparisons-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footballer-card {
+    width: 1000px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footballer-img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.footballer-img:hover {
+    transform: scale(1.2);
+}
+
+.footballer-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding-right: 15px;
+}
+
+.footballer-details {
+    flex: 1;
+}
+
+
+/* Personal Profile */
+#personal-page {
+    justify-content: center;
+    align-items: center; 
+    max-width: 1000px;
+    padding: 20px;
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#personal-about {
+    top: 20%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    float: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+#personal-userinput {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;        
+    background: white;
+    border-radius: 5px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#personal-inputstats {
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;        
+    background: white;
+    border-radius: 5px;  
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+}
+
+.file-upload input {
+    margin-right: 10px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+/* Navigation */
+#main-nav {
+    margin-top: -20px;
+}
+
+#main-nav ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+#main-nav li {
+    background-color: #43699B;
+    padding: 10px;
+    margin: 2px 0;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:white;
+}
+
+#menu-items li {
+    text-align: center;
+}
+
+#menu-toggle {
+    margin-top: 20px;
+}
+
+/* Larger Resolutions */
+@media (min-width:900px){
+    #menu-items,
+    .flex-container {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    #menu-items li,
+    #review-left,
+    #review-right {
+        flex: 1;
+    }
+
+    #menu-items a {
+        border-bottom: 3px solid transparent;
+    }
+
+    #menu-items a:hover {
+        border-bottom: 3px solid white;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+}
+

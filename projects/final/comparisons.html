@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        
+
+        <title>Player Comparisons</title>
+    </head>
+
+    <body>
+        <header>
+            <nav id="main-nav">
+                <div id="menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="menu-items" class="hidden">
+                    <li><a href="index.html"><img id="nav-logo" src="images/home.png" width="20px" height="20px"></a></li>
+                    <li id="nav-player"><a href="player.html">Player Profiles</a></li>
+                    <li id="nav-team"><a href="team.html">Team Pages</a></li>
+                    <li id="nav-comparisons"><a href="comparisons.html">Player Comparisons</a></li>
+                    <li id="nav-personal"><a href="personal.html">Personal Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="comparisons-page" class="flex-container">
+            <section id="comparisons-about">
+                <h1>Player Comparisons</h1>
+                <p>With this page, you will be able to compare two players side by side to see which statistic each player is dominating in.</p>
+            </section>
+        </section>
+
+        <section id="comparisons-page">
+            <section id="comparisons-players" class="flex-container">
+                <section id="comparison-column">
+                    <h2>Player 1</h2>
+                    <img src="images/question.png" width="250px" height="250px">
+                    <form action="https://www.fotmob.com/search" method="get">
+                        <input type="text" placeholder="Search for Player 1..." name="q" id="player1-search">
+                        <button type="submit">Search</button>
+                        <ul>
+                            <li id="player1-passing">Passing: N/A</li>
+                            <li id="player1-dribbling">Dribbling: N/A</li>
+                            <li id="player1-finishing">Finishing: N/A</li>
+                            <li id="player1-defense">Defense: N/A</li>
+                            <li id="player1-possession">Possession: N/A</li>
+                            <li id="player1-mental">Mental: N/A</li>
+                        </ul>
+                    </form>
+                </section>
+            
+                <section id="comparison-column">
+                    <h2>Player 2</h2>
+                    <img src="images/question.png" width="250px" height="250px">
+                    <form action="https://www.fotmob.com/search" method="get">
+                        <input type="text" placeholder="Search for Player 2..." name="q" id="player2-search">
+                        <button type="submit">Search</button>
+                        <ul>
+                            <li id="player2-passing">Passing: N/A</li>
+                            <li id="player2-dribbling">Dribbling: N/A</li>
+                            <li id="player2-finishing">Finishing: N/A</li>
+                            <li id="player2-defense">Defense: N/A</li>
+                            <li id="player2-possession">Possession: N/A</li>
+                            <li id="player2-mental">Mental: N/A</li>
+                        </ul>
+                    </form>
+                </section>
+            </section>
+        </section>
+
+        <h1 class="comparisons-header">Top Footballers</h1>
+        <div class="container" id="footballers-container"></div>
+        <script src="comparisons.js"></script>
+
+    </body>
